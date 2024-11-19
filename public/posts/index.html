@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='http://localhost:1313/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/syntax.css' />
-    <title>Categories - My New Hugo Site</title>
+    <title>Posts - My New Hugo Site</title>
     
     <link rel="icon" type="image/x-icon" href='http://localhost:1313/images/favicon.ico'>
     
@@ -22,11 +22,11 @@
 <meta name="keywords"
   content='' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="http://localhost:1313/categories/" />
+<link rel="canonical" href="http://localhost:1313/posts/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Categories - My New Hugo Site" />
+<meta name="twitter:title" content="Posts - My New Hugo Site" />
 <meta name="twitter:description"
   content="" />
 <meta name="twitter:site" content="http://localhost:1313/" />
@@ -36,11 +36,11 @@
 
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Categories - My New Hugo Site">
+<meta property="og:title" content="Posts - My New Hugo Site">
 <meta property="og:description"
   content="" />
-<meta property="og:url" content="http://localhost:1313/categories/" />
-<meta property="og:site_name" content="Categories" />
+<meta property="og:url" content="http://localhost:1313/posts/" />
+<meta property="og:site_name" content="Posts" />
 <meta property="og:image"
   content="http://localhost:1313/">
 <meta property="og:image:width" content="2048">
@@ -49,7 +49,7 @@
 
 
 
-<link href="/categories/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+<link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
 
 
 
@@ -142,7 +142,7 @@
               </svg>
               Overview
             </a>
-            <a class="UnderlineNav-item " href="http://localhost:1313/post">
+            <a class="UnderlineNav-item  selected " href="http://localhost:1313/post">
               <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
                 version="1.1" width="16">
                 <path fill-rule="evenodd"
@@ -150,7 +150,7 @@
                 </path>
               </svg>
               Posts
-              <span class="Counter">1</span>
+              <span class="Counter">0</span>
             </a>
           </nav>
           <div class="profile-color-modes js-promo-color-modes-banner-profile isInitialToggle">
@@ -375,7 +375,7 @@
       </svg>
       Overview
     </a>
-    <a class='UnderlineNav-item  '
+    <a class='UnderlineNav-item   selected '
       href="http://localhost:1313/post">
       <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16" version="1.1"
         width="16">
@@ -384,7 +384,7 @@
         </path>
       </svg>
       Posts
-      <span class="Counter ">1</span>
+      <span class="Counter ">0</span>
     </a>
   </nav>
 </div>
@@ -398,6 +398,54 @@
         
       
       <ul>
+        
+        <li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source">
+          <div class="col-12 d-inline-block">
+            <div class="d-inline-block mb-1">
+              <h3 class="wb-break-all">
+                <a href="http://localhost:1313/posts/firstpost/">Firstpost</a>
+              </h3>
+            </div>
+
+            <div>
+              <div class="col-12 d-inline-block text-gray mb-2 pr-4">
+                <h1 id="nested-loops-and-creating-grids">Nested loops and creating grids!</h1>
+<p>Here’s an example of a nested loop in C++ used to create a simple grid:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> gridSize <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// This is a nested loop
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// This is the outer loop
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> gridSize; <span style="color:#f92672">++</span>i) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// This is the inner loop
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> gridSize; <span style="color:#f92672">++</span>j) {
+</span></span><span style="display:flex;"><span>            cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;  |&#34;</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        cout <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">&lt;</span> gridSize <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>            cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;-----+-----&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+              </div>
+            </div>
+
+            <div class="f6 text-gray mt-2">
+              
+
+              Created
+              <relative-time datetime=" Tue, 19 Nov 2024 01:03:13 &#43;0000" class="no-wrap"
+                title=" Tue, 19 Nov 2024 01:03:13 &#43;0000">
+                Tue, 19 Nov 2024 01:03:13 &#43;0000
+              </relative-time>
+            </div>
+          </div>
+        </li>
         
       </ul>
       <div class="paginate-container">
