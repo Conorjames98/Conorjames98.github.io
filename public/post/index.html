@@ -410,28 +410,7 @@
             <div>
               <div class="col-12 d-inline-block text-gray mb-2 pr-4">
                 <h1 id="nested-loops-and-creating-grids">Nested loops and creating grids!</h1>
-<p>Here’s an example of a nested loop in C++ used to create a simple grid:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> gridSize <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// This is a nested loop
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// This is the outer loop
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> gridSize; <span style="color:#f92672">++</span>i) {
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// This is the inner loop
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> gridSize; <span style="color:#f92672">++</span>j) {
-</span></span><span style="display:flex;"><span>            cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;  |&#34;</span>;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        cout <span style="color:#f92672">&lt;&lt;</span> endl;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">&lt;</span> gridSize <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) {
-</span></span><span style="display:flex;"><span>            cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;-----+-----&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+<p>I&rsquo;ve firstly initialised a grid that&rsquo;s 3x3 and then used a for loop for using initialising (i) as 0 then checking if (i) is less than the gridSize which is 3, the next for loop will be inside the initial for loop this is what we call a nested loop, these types of loops consist of outer loops &amp; inner loops in my case (i) controls the rows and (j) controls the columns after this I use a conditional statement that controls the dividers between each column by using if (i) is less than the grid size minus 1 then to console out the dividers.</p>
               </div>
             </div>
 
