@@ -5,7 +5,9 @@ title = 'Firstpost'
 +++
 # Nested loops and creating grids!
 
-I've firstly initialised a grid that's 3x3 and then used a for loop for using initialising (i) as 0 then checking if (i) is less than the gridSize which is 3, the next for loop will be inside the initial for loop this is what we call a nested loop, these types of loops consist of outer loops & inner loops in my case (i) controls the rows and (j) controls the columns after this I use a conditional statement that controls the dividers between each column by using if (i) is less than the grid size minus 1 then to console out the dividers.
+In this example, the outer loop handles the rows, and the inner loop controls the columns. For each row, the inner loop prints the cells, and after each row, a divider is printed to separate the grid.
+
+Here’s a simple example in C++:
 
 Here’s an example of a nested loop in C++ used to create a simple grid:
 
@@ -30,3 +32,12 @@ int main() {
 
     return 0;
 }
+```
+
+
+## How It Works:
+The outer loop (i) iterates over the rows.
+The inner loop (j) iterates over the columns.
+After each row, a divider is printed (except after the last row).
+
+This approach can be easily adjusted for larger grids or different layouts.
