@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='http://localhost:1313/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/syntax.css' />
-    <title>API Staus Check - My New Hugo Site</title>
+    <title>API Staus Check - Soft&amp;SysDev Blog</title>
     
     <link rel="icon" type="image/x-icon" href='http://localhost:1313/images/favicon.ico'>
     
@@ -22,7 +22,8 @@
     
     <meta name="description"
   content="A simple application to check the staus of various APIs I have created a small application in python that allows the user to enter the url of the api endpoint to check the status of the API the application could be expanded on for POST requests to the api for the creation of long-life-tokens which would be needed for further interaction with the API.
-import requests def check_api(): while True: # GET the API url from the user url = input(&#34;Enter the API URL you want to check: &#34;).strip() #A header section for any necessary headers #A token or key (will be needed in the expansion #of the program once a bearer token is aquired) headers = { &#34;Authorization&#34;: &#34;Bearer your_api_key&#34;, &#34;Content-Type&#34;: &#34;application/json&#34; } # Make the GET request try: response = requests.get(url, headers=headers) # Check the status of the the API if response.status_code == 200: print(&#34;API is nominal!&#34;) print(&#34;Response:&#34;, response.json()) else: print(f&#34;API health check failed with status code: {response.status_code}&#34;) print(&#34;Response:&#34;, response.text) except requests.exceptions.RequestException as e: print(f&#34;An error occurred: {e}&#34;) # Allows the user to check another API another = input(&#34;Would you like to check another API? (yes/no): &#34;).strip().lower() if another != &#39;yes&#39;: print(&#34;Goodbye!&#34;) break # Runs the function again if condition is met check_api() " />
+The code can be found here: https://github.com/Conorjames98/API-Check
+" />
 <meta name="keywords"
   content='' />
 <meta name="robots" content="noodp" />
@@ -30,10 +31,11 @@ import requests def check_api(): while True: # GET the API url from the user url
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="API Staus Check - My New Hugo Site" />
+<meta name="twitter:title" content="API Staus Check - Soft&amp;SysDev Blog" />
 <meta name="twitter:description"
   content="A simple application to check the staus of various APIs I have created a small application in python that allows the user to enter the url of the api endpoint to check the status of the API the application could be expanded on for POST requests to the api for the creation of long-life-tokens which would be needed for further interaction with the API.
-import requests def check_api(): while True: # GET the API url from the user url = input(&#34;Enter the API URL you want to check: &#34;).strip() #A header section for any necessary headers #A token or key (will be needed in the expansion #of the program once a bearer token is aquired) headers = { &#34;Authorization&#34;: &#34;Bearer your_api_key&#34;, &#34;Content-Type&#34;: &#34;application/json&#34; } # Make the GET request try: response = requests.get(url, headers=headers) # Check the status of the the API if response.status_code == 200: print(&#34;API is nominal!&#34;) print(&#34;Response:&#34;, response.json()) else: print(f&#34;API health check failed with status code: {response.status_code}&#34;) print(&#34;Response:&#34;, response.text) except requests.exceptions.RequestException as e: print(f&#34;An error occurred: {e}&#34;) # Allows the user to check another API another = input(&#34;Would you like to check another API? (yes/no): &#34;).strip().lower() if another != &#39;yes&#39;: print(&#34;Goodbye!&#34;) break # Runs the function again if condition is met check_api() " />
+The code can be found here: https://github.com/Conorjames98/API-Check
+" />
 <meta name="twitter:site" content="http://localhost:1313/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -41,10 +43,11 @@ import requests def check_api(): while True: # GET the API url from the user url
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="API Staus Check - My New Hugo Site">
+<meta property="og:title" content="API Staus Check - Soft&amp;SysDev Blog">
 <meta property="og:description"
   content="A simple application to check the staus of various APIs I have created a small application in python that allows the user to enter the url of the api endpoint to check the status of the API the application could be expanded on for POST requests to the api for the creation of long-life-tokens which would be needed for further interaction with the API.
-import requests def check_api(): while True: # GET the API url from the user url = input(&#34;Enter the API URL you want to check: &#34;).strip() #A header section for any necessary headers #A token or key (will be needed in the expansion #of the program once a bearer token is aquired) headers = { &#34;Authorization&#34;: &#34;Bearer your_api_key&#34;, &#34;Content-Type&#34;: &#34;application/json&#34; } # Make the GET request try: response = requests.get(url, headers=headers) # Check the status of the the API if response.status_code == 200: print(&#34;API is nominal!&#34;) print(&#34;Response:&#34;, response.json()) else: print(f&#34;API health check failed with status code: {response.status_code}&#34;) print(&#34;Response:&#34;, response.text) except requests.exceptions.RequestException as e: print(f&#34;An error occurred: {e}&#34;) # Allows the user to check another API another = input(&#34;Would you like to check another API? (yes/no): &#34;).strip().lower() if another != &#39;yes&#39;: print(&#34;Goodbye!&#34;) break # Runs the function again if condition is met check_api() " />
+The code can be found here: https://github.com/Conorjames98/API-Check
+" />
 <meta property="og:url" content="http://localhost:1313/post/sixthpost/" />
 <meta property="og:site_name" content="API Staus Check" />
 <meta property="og:image"
@@ -185,7 +188,7 @@ import requests def check_api(): while True: # GET the API url from the user url
                         </div>
                       </div>
                     </details-menu>
-                      205 Words
+                      71 Words
                     
 
                   </div>
@@ -199,46 +202,8 @@ import requests def check_api(): while True: # GET the API url from the user url
               <div class="Box-body px-5 pb-5" style="z-index: 1">
                 <article class="markdown-body entry-content container-lg"><h1 id="a-simple-application-to-check-the-staus--of-various-apis">A simple application to check the staus  of various APIs</h1>
 <p>I have created a small application in python that allows the user to enter the url of the api endpoint to check the status of the API the application could be expanded on for POST requests to the api for the creation of long-life-tokens which would be needed for further interaction with the API.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_api</span>():
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># GET the API url from the user</span>
-</span></span><span style="display:flex;"><span>        url <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter the API URL you want to check: &#34;</span>)<span style="color:#f92672">.</span>strip()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#A header section for any necessary headers</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#A token or key (will be needed in the expansion </span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#of the program once a bearer token is aquired)</span>
-</span></span><span style="display:flex;"><span>        headers <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Authorization&#34;</span>: <span style="color:#e6db74">&#34;Bearer your_api_key&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Content-Type&#34;</span>: <span style="color:#e6db74">&#34;application/json&#34;</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Make the GET request</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
-</span></span><span style="display:flex;"><span>            response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(url, headers<span style="color:#f92672">=</span>headers)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Check the status of the the API</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> response<span style="color:#f92672">.</span>status_code <span style="color:#f92672">==</span> <span style="color:#ae81ff">200</span>:
-</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;API is nominal!&#34;</span>)
-</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;Response:&#34;</span>, response<span style="color:#f92672">.</span>json())
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;API health check failed with status code: </span><span style="color:#e6db74">{</span>response<span style="color:#f92672">.</span>status_code<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;Response:&#34;</span>, response<span style="color:#f92672">.</span>text)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> requests<span style="color:#f92672">.</span>exceptions<span style="color:#f92672">.</span>RequestException <span style="color:#66d9ef">as</span> e:
-</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;An error occurred: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Allows the user to check another API</span>
-</span></span><span style="display:flex;"><span>        another <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Would you like to check another API? (yes/no): &#34;</span>)<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>lower()
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> another <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;yes&#39;</span>:
-</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Goodbye!&#34;</span>)
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Runs the function again if condition is met</span>
-</span></span><span style="display:flex;"><span>check_api()
-</span></span></code></pre></div></article>
+<p>The code can be found here: <a href="https://github.com/Conorjames98/API-Check">https://github.com/Conorjames98/API-Check</a></p>
+</article>
               </div>
             </div>
           </div>

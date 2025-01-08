@@ -2,6 +2,7 @@
 date = '2024-11-19T01:06:26Z'
 draft = false
 title = 'Nested loops'
+pin = false
 +++
 # Nested loops and creating grids!
 

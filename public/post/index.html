@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='http://localhost:1313/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/syntax.css' />
-    <title>Posts - My New Hugo Site</title>
+    <title>Posts - Soft&amp;SysDev Blog</title>
     
     <link rel="icon" type="image/x-icon" href='http://localhost:1313/images/favicon.ico'>
     
@@ -29,7 +29,7 @@
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Posts - My New Hugo Site" />
+<meta name="twitter:title" content="Posts - Soft&amp;SysDev Blog" />
 <meta name="twitter:description"
   content="" />
 <meta name="twitter:site" content="http://localhost:1313/" />
@@ -39,7 +39,7 @@
 
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Posts - My New Hugo Site">
+<meta property="og:title" content="Posts - Soft&amp;SysDev Blog">
 <meta property="og:description"
   content="" />
 <meta property="og:url" content="http://localhost:1313/post/" />
@@ -52,7 +52,7 @@
 
 
 
-<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Soft&amp;SysDev Blog" />
 
 
 
@@ -451,46 +451,7 @@
               <div class="col-12 d-inline-block text-gray mb-2 pr-4">
                 <h1 id="a-simple-application-to-check-the-staus--of-various-apis">A simple application to check the staus  of various APIs</h1>
 <p>I have created a small application in python that allows the user to enter the url of the api endpoint to check the status of the API the application could be expanded on for POST requests to the api for the creation of long-life-tokens which would be needed for further interaction with the API.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_api</span>():
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># GET the API url from the user</span>
-</span></span><span style="display:flex;"><span>        url <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter the API URL you want to check: &#34;</span>)<span style="color:#f92672">.</span>strip()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#A header section for any necessary headers</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#A token or key (will be needed in the expansion </span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#of the program once a bearer token is aquired)</span>
-</span></span><span style="display:flex;"><span>        headers <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Authorization&#34;</span>: <span style="color:#e6db74">&#34;Bearer your_api_key&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;Content-Type&#34;</span>: <span style="color:#e6db74">&#34;application/json&#34;</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Make the GET request</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
-</span></span><span style="display:flex;"><span>            response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(url, headers<span style="color:#f92672">=</span>headers)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Check the status of the the API</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> response<span style="color:#f92672">.</span>status_code <span style="color:#f92672">==</span> <span style="color:#ae81ff">200</span>:
-</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;API is nominal!&#34;</span>)
-</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;Response:&#34;</span>, response<span style="color:#f92672">.</span>json())
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;API health check failed with status code: </span><span style="color:#e6db74">{</span>response<span style="color:#f92672">.</span>status_code<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;Response:&#34;</span>, response<span style="color:#f92672">.</span>text)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> requests<span style="color:#f92672">.</span>exceptions<span style="color:#f92672">.</span>RequestException <span style="color:#66d9ef">as</span> e:
-</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;An error occurred: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Allows the user to check another API</span>
-</span></span><span style="display:flex;"><span>        another <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Would you like to check another API? (yes/no): &#34;</span>)<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>lower()
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> another <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;yes&#39;</span>:
-</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Goodbye!&#34;</span>)
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Runs the function again if condition is met</span>
-</span></span><span style="display:flex;"><span>check_api()
-</span></span></code></pre></div>
+<p>The code can be found here: <a href="https://github.com/Conorjames98/API-Check">https://github.com/Conorjames98/API-Check</a></p>
               </div>
             </div>
 

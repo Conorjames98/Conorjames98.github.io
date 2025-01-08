@@ -2,6 +2,7 @@
 date = '2025-01-05T21:23:30Z'
 draft = false
 title = 'Time formatting (Python)'
+pin = true
 +++
 
 # formatting time in python

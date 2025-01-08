@@ -2,6 +2,7 @@
 date = '2025-01-04T01:57:11Z'
 draft = false
 title = 'A discord bot'
+pin = false
 +++
 
 # Discord bot
